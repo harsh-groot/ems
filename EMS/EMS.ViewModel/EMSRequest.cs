@@ -5,8 +5,9 @@ namespace EMS.ViewModel
 {
     public class EMSRequest
     {
+        public int Id { get;set; }
+
         [Required]
-        [BindRequired]
         public string Name { get; set; }
 
         [Required]

@@ -1,0 +1,15 @@
+/EMS/EMS.DataModel/bin
+/EMS/EMS.DataModel/obj
+/EMS/EMS.Repositories/obj
+/EMS/EMS.Repositories/bin
+/EMS/EMS.Services/bin
+/EMS/EMS.Services/obj
+/EMS/EMS.Tests/bin
+/EMS/EMS.Tests/obj
+/EMS/EMS.ViewModel/bin
+/EMS/EMS.ViewModel/obj
+/EMS/EMSRepositories/bin
+/EMS/EMSRepositories/obj
+/EMS/EMSServices/bin
+/EMS/EMSServices/obj
+/EMS/.vs

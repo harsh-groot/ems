@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using EMS.DataModel;
-using EMS.ViewModel;
 using Microsoft.EntityFrameworkCore;
 
 namespace EMS.Repositories
@@ -28,26 +27,21 @@ namespace EMS.Repositories
             return employee;
         }
 
-        public async Task Create(Employees model)
+        public async Task Upsert(Employees model)
         {
             // validate
-            if (_context.Employees.Any(x => x.Email.ToLower() == model.Email.ToLower()))
+            if (await IsEmailExists(model.Id, model.Email.ToLower()))
                 throw new Exception("Employee with the email '" + model.Email + "' already exists");
 
             // save emplyoee
-            await _context.Employees.AddAsync(model);
-            await _context.SaveChangesAsync();
-        }
-
-        public async Task Update(int id, Employees model)
-        {
-            var employee = await GetEmployee(id);
-
-            // validate
-            if (model.Email.ToLower() != employee.Email.ToLower() && _context.Employees.Any(x => x.Email.ToLower() == model.Email.ToLower()))
-                throw new Exception("Employee with the email '" + model.Email + "' already exists");
-
-            _context.Employees.Update(model);
+            if (model.Id < 1)
+            {
+                await _context.Employees.AddAsync(model);
+            }
+            else
+            {
+                _context.Employees.Update(model);
+            }
 
             await _context.SaveChangesAsync();
         }
@@ -77,6 +71,16 @@ namespace EMS.Repositories
             var employee = await _context.Employees.FirstOrDefaultAsync(d => d.Id == id);
             if (employee == null) throw new KeyNotFoundException("Employee not found");
             return employee;
+        }
+
+        private async Task<bool> IsEmailExists(int id, string email)
+        {
+            var employee = await _context.Employees.FirstOrDefaultAsync(d => d.Email.ToLower() == email.ToLower())!;
+
+            if (employee?.Id != id && _context.Employees.Any(x => x.Email.ToLower() == email.ToLower()))
+                return true;
+
+            return false;
         }
     }
 }

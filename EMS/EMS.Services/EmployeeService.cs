@@ -2,7 +2,6 @@
 using EMS.DataModel;
 using EMS.Repositories;
 using EMS.ViewModel;
-using Microsoft.EntityFrameworkCore;
 
 namespace EMS.Services
 {
@@ -27,28 +26,22 @@ namespace EMS.Services
             return await _employeeRepository.GetById(id);
         }
 
-        public async Task<bool> Create(EMSRequest model)
+        public async Task<bool> Upsert(EMSRequest model)
         {
             try
             {
-                var employee = _mapper.Map<Employees>(model);
+                var employee = new Employees();
+                if (model.Id > 0)
+                {
+                    employee = await _employeeRepository.GetById(model.Id);
+                    _mapper.Map(model, employee);
+                }
+                else
+                {
+                    employee = _mapper.Map<Employees>(model);
+                }
 
-                await _employeeRepository.Create(employee);
-                return true;
-            }
-            catch (Exception)
-            {
-                throw;
-            }
-        }
-
-        public async Task<bool> Update(int id, EMSRequest model)
-        {
-            try
-            {
-                var employee = _mapper.Map<Employees>(model);
-
-                await _employeeRepository.Update(id, employee);
+                await _employeeRepository.Upsert(employee);
                 return true;
             }
             catch (Exception)

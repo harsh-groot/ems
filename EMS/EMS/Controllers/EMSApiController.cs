@@ -72,12 +72,12 @@ namespace EMS.Controllers
         /// <returns></returns>
         [Route("~/api/CreateEmployee")]
         [HttpPost]
-        public async Task<IActionResult> Create([FromForm] EMSRequest request)
+        public async Task<IActionResult> Create([FromBody] EMSRequest request)
         {
             BaseResponse response = new BaseResponse();
             try
             {
-                var res = await _employeeService.Create(request);
+                var res = await _employeeService.Upsert(request);
                 response.ResponseCodes = ResponseCodes.OK;
                 response.ResponseMessage = "Employee created successfully";
 
@@ -99,12 +99,13 @@ namespace EMS.Controllers
         /// <returns></returns>
         [Route("~/api/UpdateEmployee/{id}")]
         [HttpPut]
-        public async Task<IActionResult> Update(int id, [FromForm] EMSRequest request)
+        public async Task<IActionResult> Update(int id, [FromBody] EMSRequest request)
         {
             BaseResponse response = new BaseResponse();
             try
             {
-                var res = await _employeeService.Update(id, request);
+                request.Id = id;
+                var res = await _employeeService.Upsert(request);
                 response.ResponseCodes = ResponseCodes.OK;
                 response.ResponseMessage = "Employee details updated successfully";
                 return Ok(response);

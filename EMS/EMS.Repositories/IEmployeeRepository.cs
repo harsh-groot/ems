@@ -9,9 +9,7 @@ namespace EMS.Repositories
 
         Task<Employees> GetById(int id);
 
-        Task Create(Employees model);
-
-        Task Update(int id, Employees model);
+        Task Upsert(Employees model);
 
         Task<bool> Delete(int id);
     }

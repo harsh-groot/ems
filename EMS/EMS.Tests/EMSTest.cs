@@ -125,7 +125,8 @@ namespace EMS.Tests
             if (Services.GetRequiredService<IEmployeeRepository>() is not MockEmployeeRepository dbManager)
                 throw new Exception(nameof(dbManager));
 
-            var serviceResponse = await service.Create(requestModel);
+            requestModel.Id = 0;
+            var serviceResponse = await service.Upsert(requestModel);
             serviceResponse.ShouldBe(true);
             Assert.Equal(4, dbManager.Database.Count);
             Assert.True(serviceResponse);
@@ -151,7 +152,8 @@ namespace EMS.Tests
                 throw new Exception(nameof(dbManager));
             
             requestModel.Name = "UpdatedName";
-            var serviceResponse = await service.Update(1, requestModel);
+            requestModel.Id = 1;
+            var serviceResponse = await service.Upsert(requestModel);
             serviceResponse.ShouldBe(true);
 
             var updatedRecord = dbManager.Database.FirstOrDefault(d => d.Id == 1)!;
