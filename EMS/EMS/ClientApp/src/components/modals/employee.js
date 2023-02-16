@@ -90,6 +90,7 @@ const EmployeeModal = ({ isModalOpen, modalType, handleClose, empId }) => {
                 <Form.Item
                     label="Name"
                     name="name"
+                    labelCol={{ span: 6 }}
                     rules={[{ required: true, message: "Please input your name!" }]}
                 >
                     <Input />
@@ -98,6 +99,7 @@ const EmployeeModal = ({ isModalOpen, modalType, handleClose, empId }) => {
                 <Form.Item
                     label="Email"
                     name="email"
+                    labelCol={{ span: 6 }}
                     rules={[{ required: true, message: "Please input your email!" }]}
                 >
                     <Input type="email" />
@@ -106,22 +108,23 @@ const EmployeeModal = ({ isModalOpen, modalType, handleClose, empId }) => {
                 <Form.Item
                     label="Department"
                     name="department"
+                    labelCol={{ span: 6 }}
                     rules={[{ required: true, message: "Please input your department!" }]}
                 >
                     <Input />
                 </Form.Item>
 
-                <Form.Item label="DOB" name="dateOfBirth">
+                <Form.Item label="DOB" labelCol={{ span: 6 }} name="dateOfBirth">
                     <DatePicker style={{ width: "100%" }} />
                 </Form.Item>
 
-                <Row gutter={16}>
-                    <Col className="gutter-row">
+                <Row gutter={16} className="justify-content-center">
+                    <Col className="gutter-row" labelCol={{ span: 6 }}>
                         <Button key="submit" type="primary" htmlType="submit">
                             {modalType === "add" ? "Submit" : "Update"}
                         </Button>
                     </Col>
-                    <Col className="gutter-row">
+                    <Col className="gutter-row" labelCol={{ span: 6 }}>
                         <Button key="submit" type="default" onClick={handleClose}>
                             Cancel
                         </Button>

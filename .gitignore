@@ -13,3 +13,4 @@
 /EMS/EMSServices/bin
 /EMS/EMSServices/obj
 /EMS/.vs
+/EMS/EMS/ClientApp/.env.development.local
