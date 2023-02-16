@@ -1,0 +1,15 @@
+D:\001-Groot\005-Sample\EmployeeManagementSystem\EMS\EMS.ViewModel\bin\Debug\net6.0\EMS.ViewModel.deps.json
+D:\001-Groot\005-Sample\EmployeeManagementSystem\EMS\EMS.ViewModel\bin\Debug\net6.0\EMS.ViewModel.dll
+D:\001-Groot\005-Sample\EmployeeManagementSystem\EMS\EMS.ViewModel\bin\Debug\net6.0\EMS.ViewModel.pdb
+D:\001-Groot\005-Sample\EmployeeManagementSystem\EMS\EMS.ViewModel\obj\Debug\net6.0\EMS.ViewModel.csproj.AssemblyReference.cache
+D:\001-Groot\005-Sample\EmployeeManagementSystem\EMS\EMS.ViewModel\obj\Debug\net6.0\EMS.ViewModel.GeneratedMSBuildEditorConfig.editorconfig
+D:\001-Groot\005-Sample\EmployeeManagementSystem\EMS\EMS.ViewModel\obj\Debug\net6.0\EMS.ViewModel.AssemblyInfoInputs.cache
+D:\001-Groot\005-Sample\EmployeeManagementSystem\EMS\EMS.ViewModel\obj\Debug\net6.0\EMS.ViewModel.AssemblyInfo.cs
+D:\001-Groot\005-Sample\EmployeeManagementSystem\EMS\EMS.ViewModel\obj\Debug\net6.0\EMS.ViewModel.csproj.CoreCompileInputs.cache
+D:\001-Groot\005-Sample\EmployeeManagementSystem\EMS\EMS.ViewModel\obj\Debug\net6.0\EMS.ViewModel.dll
+D:\001-Groot\005-Sample\EmployeeManagementSystem\EMS\EMS.ViewModel\obj\Debug\net6.0\refint\EMS.ViewModel.dll
+D:\001-Groot\005-Sample\EmployeeManagementSystem\EMS\EMS.ViewModel\obj\Debug\net6.0\EMS.ViewModel.pdb
+D:\001-Groot\005-Sample\EmployeeManagementSystem\EMS\EMS.ViewModel\obj\Debug\net6.0\ref\EMS.ViewModel.dll
+D:\001-Groot\005-Sample\EmployeeManagementSystem\EMS\EMS.ViewModel\bin\Debug\net6.0\EMS.DataModel.dll
+D:\001-Groot\005-Sample\EmployeeManagementSystem\EMS\EMS.ViewModel\bin\Debug\net6.0\EMS.DataModel.pdb
+D:\001-Groot\005-Sample\EmployeeManagementSystem\EMS\EMS.ViewModel\obj\Debug\net6.0\EMS.ViewModel.csproj.CopyComplete

@@ -1,0 +1,17 @@
+D:\001-Groot\005-Sample\EmployeeManagementSystem\EMS\EMS.Repositories\bin\Debug\net6.0\EMS.Repositories.deps.json
+D:\001-Groot\005-Sample\EmployeeManagementSystem\EMS\EMS.Repositories\bin\Debug\net6.0\EMS.Repositories.dll
+D:\001-Groot\005-Sample\EmployeeManagementSystem\EMS\EMS.Repositories\bin\Debug\net6.0\EMS.Repositories.pdb
+D:\001-Groot\005-Sample\EmployeeManagementSystem\EMS\EMS.Repositories\bin\Debug\net6.0\EMS.DataModel.dll
+D:\001-Groot\005-Sample\EmployeeManagementSystem\EMS\EMS.Repositories\bin\Debug\net6.0\EMS.ViewModel.dll
+D:\001-Groot\005-Sample\EmployeeManagementSystem\EMS\EMS.Repositories\bin\Debug\net6.0\EMS.DataModel.pdb
+D:\001-Groot\005-Sample\EmployeeManagementSystem\EMS\EMS.Repositories\bin\Debug\net6.0\EMS.ViewModel.pdb
+D:\001-Groot\005-Sample\EmployeeManagementSystem\EMS\EMS.Repositories\obj\Debug\net6.0\EMS.Repositories.csproj.AssemblyReference.cache
+D:\001-Groot\005-Sample\EmployeeManagementSystem\EMS\EMS.Repositories\obj\Debug\net6.0\EMS.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+D:\001-Groot\005-Sample\EmployeeManagementSystem\EMS\EMS.Repositories\obj\Debug\net6.0\EMS.Repositories.AssemblyInfoInputs.cache
+D:\001-Groot\005-Sample\EmployeeManagementSystem\EMS\EMS.Repositories\obj\Debug\net6.0\EMS.Repositories.AssemblyInfo.cs
+D:\001-Groot\005-Sample\EmployeeManagementSystem\EMS\EMS.Repositories\obj\Debug\net6.0\EMS.Repositories.csproj.CoreCompileInputs.cache
+D:\001-Groot\005-Sample\EmployeeManagementSystem\EMS\EMS.Repositories\obj\Debug\net6.0\EMS.Repositories.csproj.CopyComplete
+D:\001-Groot\005-Sample\EmployeeManagementSystem\EMS\EMS.Repositories\obj\Debug\net6.0\EMS.Repositories.dll
+D:\001-Groot\005-Sample\EmployeeManagementSystem\EMS\EMS.Repositories\obj\Debug\net6.0\refint\EMS.Repositories.dll
+D:\001-Groot\005-Sample\EmployeeManagementSystem\EMS\EMS.Repositories\obj\Debug\net6.0\EMS.Repositories.pdb
+D:\001-Groot\005-Sample\EmployeeManagementSystem\EMS\EMS.Repositories\obj\Debug\net6.0\ref\EMS.Repositories.dll
